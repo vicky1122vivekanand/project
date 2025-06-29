@@ -1,0 +1,125 @@
+      /* Overall page */
+body {
+    background-color: rgb(140, 151, 175);
+}
+button{
+    border-radius: 10px;
+    color: blue;
+}
+.page{
+    display:none;
+}
+.page:target{
+    display: block;
+}
+#main1:target ~ #main1,
+body:not(:has(:target)) #main1{
+    display:block;
+}
+#main2:target ~ #main2,
+body:not(:has(:target)) #main2{
+    display:block;
+}
+
+
+
+h1{
+    border-radius: 50%;
+    box-shadow: 5px 5px 12px blue;
+    padding: 25px;
+}
+button:hover{
+     box-shadow: 5px 5px 12px red;
+}
+input{
+    box-shadow: 5px 5px 12px green;
+}
+      
+
+
+
+
+
+/*   Heading Part */
+
+div a{
+    text-decoration: none;
+    color: red;
+}
+ .nav a{
+    margin:20px;
+    cursor: pointer;
+    color: blue;
+    text-decoration: none;
+    padding:10px;
+ }
+ a{
+    border:2px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px rgba(201, 17, 17, 0.5);
+ }
+ a:hover{
+    background-color: rgb(155, 195, 218);
+    color: brown;
+    
+ }
+
+
+    /* signup/Register */
+heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    text-shadow: 2px 2px 5px rgba(201, 17, 17, 0.5);
+
+}
+form{
+    margin: 10px;
+    padding: 10px;
+    text-shadow: 2px 2px 5px rgba(201, 17, 17, 0.5);
+}
+.main1{
+    margin:20px;
+    font-size: 30px;
+    border:2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    transition: .5s ease;
+    transform:translateX(-180px);
+}
+
+    /* login */
+
+.login{
+    margin-left: 550px;
+    margin-top: 50px;
+    height: 200px;
+    width: 250px;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    vertical-align: space-evenl;
+    background-color: rgb(107, 97, 97);
+    border-radius: 15px;
+    color:white;
+
+}
+.main2{
+    margin:20px;
+    font-size: 30px;
+    border:2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    transition: .5s ease;
+    transform:translateX(180px);
+}
+
+
+
+
